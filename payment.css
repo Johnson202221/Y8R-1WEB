@@ -1,0 +1,107 @@
+nav{
+    background-color: rgb(211, 209, 208);
+    height: 80px;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+nav ul{
+    float: right;
+    margin-right: 30px;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 18px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo{
+    color: rgb(31, 138, 188);
+    font-size: 35px;
+    line-height: 60px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.checkbtn{
+    color: white;
+    font-size: 40px;
+    float: right;
+    line-height: 60px;
+    margin-right: 30px;
+    display: none;
+
+}
+#check{
+    display: none;
+}
+@media screen and (max-width:768px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(250, 232, 208);
+        text-align: center;
+        padding: 0;
+    }
+    #check:checked ~ul{
+        left:0;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+    }
+}
+/*head*/
+*{
+    box-sizing: border-box;
+}
+.payments{
+    width:40px; height:30px;
+    margin-right: 6px;
+}
+.Upper{
+    margin-bottom: 100px;
+    border: 1px solid black;
+    margin-left: 20%;
+    margin-right:20%;
+}
+.payment-type{
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 100px;
+}
+
+.Main{
+   width:50%;
+   padding-left: 30px;
+}
+#submit{
+    padding: 7px;
+    background-color: coral;
+    border-radius: 5px;
+    margin-left:60px ;
+}
+.person-info{
+    width:60%;
+}
+img{
+    width:40px; height:30px; margin-left: 8px;
+}
+form{
+    margin-left:100px;
+}
+.F1{
+    margin-top: 7%;
+}
